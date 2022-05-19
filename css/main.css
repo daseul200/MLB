@@ -2508,6 +2508,30 @@ footer .top{
         header .mobile_nav .mobile_nav_in{
             width: 80%;
         }
+
+        .visual .swiper-horizontal>.swiper-pagination-bullets{
+            left: -80px;
+        }
+        .visual .swiper .swiper-slide h1{
+            font-size: 30px;
+        }
+        .visual .swiper .swiper-slide p{
+            font-size: 20px;
+        }
+        .visual .swiper .s3 .s3-right span img{
+            width: 200%;
+        }
+        .visual .swiper .s4.swiper-slide-active .s4-left span{
+            font-size: 18px;
+        }
+        .visual .swiper .s4 .s4-left p{
+            font-size: 17px;
+        }
+
+
+
+
+
         .banner{
             padding: 80px 5vw;
         }
@@ -2539,6 +2563,11 @@ footer .top{
             width: 120px;
             height: 148px;
         }
+        .contents .hover_ani .li_des p{
+            width: 100%;
+            text-align: center;
+        }
+
         .six_tab h1{
             top: 60px;
         }
@@ -2557,7 +2586,10 @@ footer .top{
         }
         /* line_tab */
         .line_tab .membership{
-            margin-top: 40px;
+            margin-top: 15px;
+        }
+        .line_tab .line_tab_text{
+            font-size: 27px;
         }
         .line_tab .membership #main-carousel .splide__slide .splide_img{
             height: 300px;
@@ -2567,6 +2599,22 @@ footer .top{
         }
         .line_tab .membership #main-carousel .splide__slide .splide_des p{
             font-size: 16px;
+        }
+        .splide__track--fade>.splide__list>.splide__slide:first-child{
+            margin-top: 0;
+        }
+        .line_tab .membership #main-carousel .splide__slide .splide_img{
+            height: 260px;
+        }
+        .splide__track--fade>.splide__list>.splide__slide .splide_des p{
+            margin: 10px 0;
+        }
+        .splide__track--fade>.splide__list>.splide__slide div{
+            padding: 0;
+        }
+        .line_tab .membership #main-carousel .splide__slide .splide_des{
+            height: 200px;
+            margin-top: 30px;
         }
 
         /* hive */
@@ -2603,10 +2651,12 @@ footer .top{
             height: 500px;
         }
         .event .event_right h3{
-            font-size: 22px;
+            font-size: 20px;
+            margin-top: 40px;
         }
         .event .event_right h1{
             font-size: 30px;
+            margin: 0;
         }
         .event .event_right span{
             font-size: 24px;
@@ -2632,16 +2682,20 @@ footer .top{
         }
         .store .store_box .contents .li_des b, .store .store_box .contents .li_des h2{
             font-size: 16px;
+            margin-top: 10px;
+        }
+        .store .store_box .contents .li_des{
+            padding: 0;
         }
         .store .store_box .contents .li_des h2{
-            line-height: 30px;
-            margin-top: 20px;
+            line-height: 20px;
+
+        }
+        .store .store_box .contents .li_des p{
+            display: none;
         }
         .store .store_box .contents .des2 p{
             font-size: 14px;
-        }
-        .store .store_box .contents .li_des button{
-            display: none;
         }
 
         /* footer */
@@ -2675,20 +2729,23 @@ footer .top{
         .footer_bottom .info ul li a{
             padding: 4px;
             background-color: transparent;
-            color: #16173f;
+            color: #184599;
             font-size: 13px;
             font-weight: bold;
         }
         .footer_bottom .info ul li:nth-child(odd) a{
             background-color: transparent;
-            color: #111;
+            color: rgb(82, 82, 82);
         }
-        .footer_bottom .info ul li:last-child(odd) a{
-            color: #36bac6;
+        .footer_bottom .info ul li:last-child a{
+            color: #a82a2a;
         }
         .footer_bottom address{
             font-size: 14px;
             line-height: 22px;
+        }
+        .footer_bottom p{
+            font-size: 12px;
         }
     }
 }
