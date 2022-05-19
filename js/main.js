@@ -162,13 +162,13 @@ $(function(){
 
 
     //slick slider(.six_tab)
-    $('.product').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
+    // $('.product').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     fade: true,
+    //     cssEase: 'linear'
+    // });
 
     //splide를 사용한 line_tab
     var main = new Splide( '#main-carousel', {
