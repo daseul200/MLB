@@ -2168,11 +2168,11 @@ footer .top{
         margin-top: 60px;
     }
     .visual .swiper .swiper-slide h1{
-        font-size: 40px;
+        font-size: 35px;
         line-height: 55px;
     }
     .visual .swiper .swiper-slide p {
-        font-size: 25px;
+        font-size: 22px;
         margin-top: 20px;
     }
     .visual .swiper .s3 div{
@@ -2186,6 +2186,9 @@ footer .top{
         margin: 0;
         padding: 0;
         margin-top: 14px;
+    }
+    .visual .swiper .s3 > div > div{
+        margin-top: 30px;
     }
     .visual .swiper .s3 .s3-left{
         order: 2;
@@ -2211,7 +2214,7 @@ footer .top{
         align-items: flex-start;
     }
     .visual .swiper .s4 .s4-left h1{
-        margin-top: 150px;
+        margin-top: 120px;
     }
     .visual .swiper .s4 .s4-left span{
         white-space: nowrap;
@@ -2235,8 +2238,8 @@ footer .top{
         padding: 80px 5vw;
     }
     .banner .contents ul li{
-        width: 150px;
-        height: 180px;
+        width: 130px;
+        height: 160px;
     }
     .banner .banner-text p{
         font-size: 40px;
@@ -2250,10 +2253,10 @@ footer .top{
     }
     .banner .hover_ani .li_des h3{
         font-size: 18px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .banner .hover_ani .li_des p{
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .six_tab .product .slick-slide{
@@ -2311,7 +2314,7 @@ footer .top{
     .six_tab .product .slick-slide .product_left{
         order: 2;
         width: 70%;
-        height: 65%;
+        height: 75%;
     }
     .six_tab .product .slick-slide .product_right{
         /* order은 flex쓸떄 사용가능, 자식객체끼리 순서변경 */
@@ -2346,11 +2349,11 @@ footer .top{
         display: none;
     }
     .six_tab .product .slick-dots{
-        bottom: 40px;
+        bottom: 50px;
     }
     .six_tab .product .slick-dots li{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         margin: 5px;
     }
     .six_tab .product .slick-dots li button:before{
@@ -2362,6 +2365,9 @@ footer .top{
         padding: 80px 5vw;
         height: 500px;
     }
+    .line_tab .line_tab_text{
+        font-size: 30px;
+    }
     .hive .hive_box{
         height: 0px;
     }
@@ -2369,8 +2375,17 @@ footer .top{
         width: 80px;
         height: 80px;
     }
+    .line_tab .membership #main-carousel .splide__slide .splide_des{
+        height: 300px;
+    }
+    .line_tab .membership #main-carousel .splide__slide .splide_des p{
+        font-size: 18px;
+    }
+    .splide__track--fade>.splide__list>.splide__slide .splide_des span{
+        font-size: 18px;
+    }
     .line_tab .membership #main-carousel .splide__slide .splide_des h3{
-        font-size: 30px;
+        font-size: 26px;
         white-space: nowrap;
     }
     .line_tab .membership #main-carousel .splide__slide .splide_img{
@@ -2380,9 +2395,12 @@ footer .top{
     .line_tab .membership #main-carousel .splide__slide:last-child .splide_img{
         width: 65%;
     }
-    /* .hive .hive_box .hive_left{
-        width: 30%;
-    } */
+    .line_tab .membership #main-carousel .splide__slide:nth-child(3) .splide_des h3{
+        margin-top: 30px;
+    }
+    .hive .hive_box .hive_right .hive_btns .contents p{
+        display: none;
+    }
     .hive .hive_text h2{
         font-size: 45px;
     }
@@ -2401,19 +2419,29 @@ footer .top{
     }
 
     .photo {
+        background-image: url(../img/6\ bacground-m.png);
+        background-position: bottom;
         padding: 100px 5vw;
     }
     .photo h1{
-        font-size: 35px;
+        font-size: 32px;
         white-space: nowrap;
     }
     .photo p{
-        font-size: 22px;
+        font-size: 18px;
         white-space: nowrap;
+    }
+    .photo .hover_ani .li_bg{
+        width: 70px;
+        height: 80px;
+    }
+    .photo .contents .hover_ani button{
+        width: 90%;
     }
 
     .event .event_right {
         padding: 100px 5vw;
+        height: 900px;
     }
     .event .event_left .mySwiper3 .swiper-slide .kids_text h4{
         font-size: 25px;
@@ -2432,6 +2460,9 @@ footer .top{
     }
     .event .event_left .mySwiper3 .swiper-slide:last-child{
         background-image: url(../img/7\ kids4.png);
+    }
+    .event .event_right p{
+        font-size: 16px;
     }
 
     .store{
@@ -2490,9 +2521,12 @@ footer .top{
         font-size: 14px;
         line-height: 22px;
     }
+    .footer_top .tel .tel2 p{
+        font-size: 12px;
+    }
 
 
-    @media screen and (max-width:320px) {
+    @media screen and (max-width:360px) {
         header{
             height: 50px;
         }
