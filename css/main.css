@@ -12,9 +12,9 @@
     100%{transform: rotateZ(8deg);}
 }
 @keyframes product_ani{
-    0%{top: 20%;}
-    50%{top:21%;}
-    100%{top: 20%;}
+    0%{top: 37%;}
+    50%{top:39%;}
+    100%{top: 37%;}
 }
 
 *{margin: 0; padding: 0;}
@@ -627,10 +627,25 @@ header .mobile_nav{
     background-image: url(../img/3\ background-sky.png);
 }
 .six_tab .product .slick-slide > div{
+    width: 100%;
+    height: 100%;
+}
+.six_tab .product .slick-slide > div > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.six_tab .product .slick-slide > div > div > div{
     width: 50%;
+    /* div안의 글자와 이미지를 부모객체의 가운데로 정렬 */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: center;
 }
 .six_tab .product .slick-dots{
@@ -682,19 +697,14 @@ header .mobile_nav{
     width: 100%;
     text-align: center;
 }
-.six_tab .product .slick-slide .product_right{
-    position: relative;
-}
 .six_tab .product .slick-slide .product_right i{
     position: absolute;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bold;
     font-style: normal;
     color: #85948c;
     opacity: 0;
-    margin-top: 180px;
-    /* top: 180px; */
-    top: 35%;
+    top: 40%;
     transition: all 0.7s;
 }
 .six_tab .product .slick-slide:nth-child(even) .product_right i{
@@ -702,15 +712,16 @@ header .mobile_nav{
 }
 .six_tab .product .slick-active .product_right i{
     opacity: 1;
-    top: 10%;
+    top: 30%;
 }
 .six_tab .product .slick-slide .product_right .product_img{
     /* position: absolute; */
     /* width: 380px; */
     /* right: 120px; */
-    margin-top: 110px;
+    /* margin-top: 110px; */
     /* bottom: 50px; */
     /* width: 380px; */
+    position: absolute;
     animation:product_ani 1s infinite;   
 }
 /* 슬라이드 아래 여백 없게함 */
@@ -1435,6 +1446,9 @@ footer .top{
     .store .store_box{
         width: 50%;
     }
+    .six_tab .product .product_right .product_img{
+        width: 30%;
+    }
 }
 @media screen and (max-width:1200px){
     .visual .swiper-horizontal>.swiper-pagination-bullets {
@@ -1488,6 +1502,9 @@ footer .top{
         line-height: 0px;
         padding-right: 7px;
         font-size: 14px;
+    }
+    .six_tab .product .slick-slide .product_right i{
+        font-size: 40px;
     }
     .line_tab .membership{
         width:75%;
@@ -1730,18 +1747,14 @@ footer .top{
     .six_tab .product .slick-slide{
         height: 90vh;
     }
-    .six_tab .product .slick-slide > div{
-        margin-bottom: 100px;
+    .six_tab .product .slick-slide > div > div > div{
+        height: 47%;
     }
     .six_tab .product .slick-slide .product_right i{
         font-size: 35px;
-        top: 53%;
-    }
-    .six_tab .product .slick-slide .product_right .product_img{
-        width: 330px;
     }
     .six_tab .product .slick-dots {
-        bottom: 40px;
+        bottom: 60px;
     }
     .six_tab .product .slick-dots li{
         margin: 20px;
@@ -1758,7 +1771,7 @@ footer .top{
     }
     .six_tab .product .slick-slide .product_left p{
         font-size: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     /* 네번째 */
@@ -1945,7 +1958,7 @@ footer .top{
         margin-top: 10px;
     }
     .six_tab .product .slick-dots li{
-        margin: 10px;
+        margin: 8px;
     }
     .six_tab .product .slick-slide .product_left h3{
         font-size: 22px;
@@ -1954,15 +1967,11 @@ footer .top{
         font-size: 18px;
     }
     .slick-slide img {
-        width: 80%;
         margin: 0 auto;
     }
     .six_tab .product .slick-slide .product_right i{
         font-size: 30px;
-        top: 50%;
-    }
-    .six_tab .product .slick-dots{
-        bottom: 80px;
+        top: 65%;
     }
     .line_tab{
         padding: 100px 5vw;
@@ -2248,7 +2257,6 @@ footer .top{
     }
 
     .six_tab .product .slick-slide{
-        background-image: none;
         background-color: #1f393a;
     }
     .six_tab .product .p2{
@@ -2286,13 +2294,15 @@ footer .top{
         font-size: 38px;
     }
     .six_tab .product .slick-slide{
-        flex-flow: column nowrap;
-        height: 85vh;
+        height: 95vh;
     }
-    /* .six_tab .product .slick-slide > div{
-        width: 60%;
-        margin: 0 auto;
-    } */
+    .six_tab .product .slick-slide > div > div{
+        background-image: none;
+        flex-flow: column nowrap;
+    }
+    .six_tab .product .slick-slide > div > div > div{
+        width: 100%;
+    }
     .six_tab .product .slick-slide > div{
         position: static;
         margin-bottom: 0;
@@ -2301,23 +2311,24 @@ footer .top{
     .six_tab .product .slick-slide .product_left{
         order: 2;
         width: 70%;
+        height: 65%;
     }
     .six_tab .product .slick-slide .product_right{
         /* order은 flex쓸떄 사용가능, 자식객체끼리 순서변경 */
         order: 1;
-        margin-top: 65px;
-        width: 60%;
+        margin-top: 200px;
+        width: 55%;
     }
     .six_tab .product .slick-slide .product_left p{
         margin-bottom: 30px;
         white-space: nowrap;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 25px;
     }
     .six_tab .product .slick-slide .product_left h3{
         text-align: center;
         white-space: nowrap;
-        margin: 20px 0 10px;
+        margin: 0 0 10px;
     }
     .six_tab .product .slick-slide .product_right .product_img{
         width: 100%;
@@ -2573,8 +2584,8 @@ footer .top{
         .six_tab h1{
             top: 60px;
         }
-        .six_tab .product .slick-slide{
-            background-image: none;
+        .six_tab .product .slick-slide .product_left{
+            height: 80%;
         }
         .six_tab .product .slick-dots li{
             width: 47px;
