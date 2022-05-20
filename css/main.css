@@ -2492,7 +2492,7 @@ footer .top{
     }
 
 
-    @media screen and (max-width:360px) {
+    @media screen and (max-width:320px) {
         header{
             height: 50px;
         }
@@ -2526,7 +2526,7 @@ footer .top{
         .visual .swiper .swiper-slide h1{
             font-size: 30px;
             line-height: 40px;
-            margin-top: 50px;
+            /* margin-top: 50px; */
         }
         .visual .swiper .swiper-slide p{
             font-size: 20px;
@@ -2540,6 +2540,9 @@ footer .top{
         .visual .swiper .s4 .s4-left p{
             font-size: 17px;
         }
+        .visual .swiper .s4 .s4-left h1{
+            margin-top: 130px;
+        }
 
 
 
@@ -2548,15 +2551,14 @@ footer .top{
         .banner{
             padding: 80px 5vw;
         }
-        .banner h1{
-            font-size: 20px;
+        .banner .banner-text p{
+            font-size: 40px;
+        }
+        .banner .banner-text h1{
+            font-size: 30px;
         }
         .banner .contents{
             margin-top: 40px;
-        }
-        .banner .contents ul li{
-            width: 130px;
-            height: 158px;
         }
         .banner .contents .hover_ani .li_des h3{
             font-size: 13px;
@@ -2564,7 +2566,7 @@ footer .top{
         }
         .contents .hover_ani .li_des p{
             width: 28px;
-            margin-top: 7px;
+            margin-top: 0px;
         }
         .banner .contents .hover_ani .li_des button{
             display: none;
@@ -2573,9 +2575,11 @@ footer .top{
             margin-top: 10px;
         }
         .banner .contents ul li{
-            width: 120px;
-            height: 148px;
+            width: 105px;
+            height: 128px;
         }
+
+
         .contents .hover_ani .li_des p{
             width: 100%;
             text-align: center;
@@ -2585,17 +2589,23 @@ footer .top{
             top: 60px;
         }
         .six_tab .product .slick-slide .product_left{
-            height: 80%;
+            height: 110%;
         }
         .six_tab .product .slick-dots li{
-            width: 47px;
-            height: 47px;
+            width: 43px;
+            height: 43px;
         }
         .six_tab .product .slick-dots{
-            bottom: 70px;
+            bottom: 100px;
         }
         .six_tab .product .slick-dots li button:before{
             display: none;
+        }
+        .six_tab .product .slick-slide .product_left h3{
+            font-size: 20px;
+        }
+        .six_tab .product .slick-slide .product_left p{
+            font-size: 16px;
         }
         /* line_tab */
         .line_tab .membership{
@@ -2640,8 +2650,19 @@ footer .top{
         .hive .hive_box .hive_right .hive_btns .contents p{
             display: none;
         }
+        .hive .hive_text h2{
+            font-size: 37px;
+        }
+        .hive .hive_text span{
+            font-size: 37px;
+        }
+        .hive .hive_text p{
+            font-size: 18px;
+        }
         /* photo */
         .photo{
+            background-image: url(../img/6\ bacground-m.png);
+            background-position: bottom;
             padding: 80px 5vw;
         }
         .photo h1{
@@ -2652,16 +2673,28 @@ footer .top{
             font-size: 12px;
             margin-bottom: 30px;
         }
+        .photo .hover_ani .li_bg{
+            width: 70px;
+            height: 80px;
+            left: 4px;
+        }
+        .photo .contents .hover_ani button{
+            margin-top: 25px;
+        }
         /* event */
+        .event .event_left .mySwiper3 .swiper-slide{
+            background-position: left;
+        }
         .event .event_left .mySwiper3 .swiper-slide .kids_text h4{
             font-size: 20px;
         }
         .event .event_left .mySwiper3 .swiper-slide .kids_text h2{
             font-size: 30px;
+            color: #fff;
         }
         .event .event_right{
             padding: 100px 5vw;
-            height: 500px;
+            height: 550px;
         }
         .event .event_right h3{
             font-size: 20px;
@@ -2676,7 +2709,7 @@ footer .top{
             margin-bottom: 0;
         }
         .event .event_right p{
-            font-size: 16px;
+            font-size: 14px;
             line-height: 20px;
         }
         /* store */
