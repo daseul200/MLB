@@ -17,6 +17,9 @@
     100%{top: 37%;}
 }
 
+header .sub_link{
+    color: #ff0000;
+}
 *{margin: 0; padding: 0;}
 li{list-style: none;}
 a{text-decoration: none; display: block; color: #111; font-family: 'Noto Sans KR', sans-serif; white-space: nowrap;}
@@ -1678,6 +1681,9 @@ footer .top{
     }
     header .mobile_nav .mobile_nav_in nav .sub li a{
         padding-left: 40px;
+    }
+    header .mobile_nav .mobile_nav_in nav .sub li a.sub_link {
+        color: #ff0000;
     }
     header .mobile_nav .mobile_nav_in .mobile_sns {
         margin-top: 20px;
